@@ -6,5 +6,5 @@ for (key in dirpaths) {
 	if (dirpaths.hasOwnProperty(key)) exports[key] = dirpaths[key];
 }
 
-exports.readFiles = require(path.join(__dirname, 'lib', 'readfiles'));
-exports.readFilesStream = require(path.join(__dirname, 'lib', 'readfilesstream'));
+exports.readFiles = require('./lib/readfiles');
+exports.readFilesStream = require('./lib/readfilesstream');
